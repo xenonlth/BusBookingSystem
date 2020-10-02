@@ -1,0 +1,277 @@
+#main{
+    margin:0px;
+    background-image:url(../pictures/background.jfif);
+    background-position:center;
+    background-repeat:false;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a{
+    color:blue;
+    text-decoration: none;
+    padding:10px;
+}
+
+a:hover{
+    color:rgb(54, 98, 128);
+    text-decoration: underline;
+}
+
+.red-text{
+    color:Yellow;
+}
+
+/*
+-------------Headers------------------------
+*/
+.header-img{
+    padding:0;
+    margin:0;
+}
+
+.header-typeA{
+    float:left;
+    padding:3px 10px;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+.header-typeA:hover{
+    background-color:rgba(0,0,0,0.6);
+    text-decoration:none;
+    color:white;
+    transform:scale(1.2);
+    border-radius:5px;
+}
+
+.header-typeB{
+    float:right;
+    padding:3px 10px;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+.header-typeB:hover{
+    background-color:rgba(0,0,0,0.6);
+    text-decoration:none;
+    color:white;
+    transform:scale(1.2);
+    border-radius:5px;
+}
+
+#nav-bar{
+    background-color:rgba(158, 208, 255,0.8);
+    padding:2px 15px;
+    margin:0;
+    border-radius:0 0 10px 10px;
+    overflow:hidden;
+}
+
+.header{
+    z-index:999;
+    padding:0;
+}
+
+.sticky{
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+
+/*
+-------------footer---------------
+*/
+footer{
+    margin-top:20px;
+    background-color:rgba(158, 208, 255,0.8);
+    border-radius:10px 10px 0 0;
+    display:grid;
+    grid-template-columns:auto 2px auto;
+    grid-template-areas:
+    "footer-left bar footer-right";
+}
+
+.footer-left{
+    padding-left:20px;
+    grid-area:footer-left;
+}
+
+.footer-bar{
+    margin:10px 0;
+    background-color:rgba(0,0,0,0.6);
+    grid-area:"bar";
+}
+
+.footer-right{
+    padding-left:20px;
+    grid-area:footer-right;
+}
+
+/*
+----------------content----------------------
+*/
+#content{
+    background-color:rgb(255,255,255,0.9);
+    margin:20px;
+    padding:20px;
+    border-radius:20px;
+}
+
+
+/*
+----------------buy ticket page ---------------------------
+*/
+
+#buy-ticket-content{
+    display:grid;
+    grid-template-columns:33% 33% 33%;
+    grid-template-areas:
+    "state area station";
+}
+
+#buy-ticket-state{
+    grid-area:"state";
+}
+
+#buy-ticket-area{
+    grid-area:"area";
+}
+
+#buy-ticket-station{
+    grid-area:"station";
+}
+
+#buy-ticket-title{
+    grid-area:"title";
+}
+
+#choose-state{
+    background-color:rgba(0,0,0,0.3);
+    overflow:hidden;
+    padding:20px;
+    margin-left:5px;
+}
+
+#choose-area{
+    background-color:rgba(0,0,0,0.3);
+    overflow:hidden;
+    padding:20px;
+    margin-left:5px;
+}
+
+#choose-station{
+    background-color:rgba(0,0,0,0.3);
+    overflow:hidden;
+    padding:20px;
+    margin-left:5px;
+}
+
+.selection{
+    margin: 20px;
+}
+
+.selection-text{
+    padding:10px;
+    padding-right:60px;
+    font-size:20px;
+    color:black;
+    text-decoration:none;
+    text-align:justify;
+}
+
+.selection-text:hover{
+    color:white;
+    background-color:rgb(0,0,0,0.6);
+    transform:scale(1.3);
+}
+
+.selection-title{
+    padding-left:20px;
+}
+
+.hidden{
+    visibility:hidden;
+}
+
+/*
+--------------homepage------------------
+*/
+
+#homepage-select{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+    "home-se1 home-se2 home-se3 home-se4";
+}
+
+#homepage-form1{
+    grid-area:"home-se1";
+}
+
+#homepage-form2{
+    grid-area:"home-se2";
+}
+
+#homepage-form3{
+    grid-area:"home-se3";
+}
+
+#homepage-form4{
+    grid-area:"home-se4";
+}
+
+.homepage-form{
+    width:100%;
+    background-color:rgba(0,0,0,0.3);
+    padding:20px 0;
+}
+
+.homepage-form-text{
+    padding:20px;
+    color:rgb(0,0,0);
+    text-decoration:none;
+}
+
+.homepage-form-text:hover{
+    background-color:rgba(0,0,0,0.6);
+    color:white;
+}
+
+#num-btn{
+    width:50px;
+}
+
+#stk{
+    width:50px;
+    background-color:rgba(0,0,0,0);
+}
+
+.blackBlock{
+    background-color:rgba(0, 0, 0, 0.527);
+    color:white;
+    text-decoration:underline;
+}
+
+/*
+------------contact---------
+*/
+.whiteBackground{
+    background-color:rgba(255,255,255,1);
+}
+
+/*
+--------------------form-----------------
+*/
+
+.form-input{
+    border-radius:5px;
+    size:80px;
+}
+
+.form-label{
+    font-weight:bold;
+    font-size:16px;
+}
